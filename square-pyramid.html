@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Pyramid | Pyrasquare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pyrasquare</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="square-pyramid.html">Square Pyramid</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="square-pyramid">
+            <h2>Square Pyramid</h2>
+            <div id="3d-model-container">
+                <iframe src="https://www.tinkercad.com/embed/3OFzifqdKO9?sharecode=qLmiXmPJwxJSGnFErV91RQum9Ce8h-tgfsBssCA3z4g" width="100%" height="480" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+            <div id="label-options">
+                <button onclick="showVolumeCalculator()">Find Volume</button>
+                <button onclick="showAreaCalculator()">Find Area</button>
+            </div>
+            <div id="volume-calculator" class="calculator">
+                <h3>Volume Calculator</h3>
+                <p>To calculate the volume of a square pyramid, you need the base area and the height. The base area is the area of the square at the bottom, and the height is the perpendicular distance from the base to the apex.</p>
+                <form onsubmit="calculateVolume(event)">
+                    <label for="base-area">Base Area:</label>
+                    <input type="number" id="base-area" required>
+                    <label for="height">Height:</label>
+                    <input type="number" id="height" required>
+                    <button type="submit">Calculate Volume</button>
+                </form>
+                <p id="volume-result"></p>
+            </div>
+            <div id="area-calculator" class="calculator">
+                <h3>Area Calculator</h3>
+                <p>To calculate the surface area of a square pyramid, you need the base side length and the slant height. The base side is the length of one side of the square base, and the slant height is the distance from the base to the apex along the face of the pyramid.</p>
+                <form onsubmit="calculateArea(event)">
+                    <label for="base-side">Base Side:</label>
+                    <input type="number" id="base-side" required>
+                    <label for="slant-height">Slant Height:</label>
+                    <input type="number" id="slant-height" required>
+                    <button type="submit">Calculate Area</button>
+                </form>
+                <p id="area-result"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pyrasquare</p>
+    </footer>
+</body>
+</html>

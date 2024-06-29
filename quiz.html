@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Pyrasquare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pyrasquare</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="square-pyramid.html">Square Pyramid</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quiz">
+            <h2>Quiz</h2>
+            <form id="quiz-form" onsubmit="gradeQuiz(event)">
+                <div class="quiz-question">
+                    <p>1. What is the formula to calculate the volume of a square pyramid?</p>
+                    <input type="text" required>
+                </div>
+                <div class="quiz-question">
+                    <p>2. Name the parts of a square pyramid.</p>
+                    <input type="text" required>
+                </div>
+                <div class="quiz-question">
+                    <p>3. What is the historical significance of the Great Pyramid of Giza?</p>
+                    <input type="text" required>
+                </div>
+                <div class="quiz-question">
+                    <p>4. How is the square pyramid used in modern architecture?</p>
+                    <input type="text" required>
+                </div>
+                <div class="quiz-question">
+                    <p>5. What is the area of a square pyramid with a base side of 10 units and a slant height of 15 units?</p>
+                    <input type="text" required>
+                </div>
+                <div class="quiz-question">
+                    <p>6. Why is the base area important in calculating the volume of a square pyramid?</p>
+                    <input type="text" required>
+                </div>
+                <div class="quiz-question">
+                    <p>7. What is the importance of the height in calculating the volume of a square pyramid?</p>
+                    <input type="text" required>
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+            <p id="quiz-result"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pyrasquare</p>
+    </footer>
+</body>
+</html>
